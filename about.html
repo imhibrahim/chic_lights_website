@@ -1,0 +1,612 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About As</title>
+    <link rel="icon" href="pic/logo_300x300.webp">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        .con {
+            color: #ffffff;
+        }
+        
+        .main {
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        
+        .counting {
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        .inner-div {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+        }
+        
+        .colum {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-left: 0px;
+        }
+        
+        .colum i {
+            font-size: 40px;
+            color: #ffffff;
+        }
+        
+        .number {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+        
+        .marg {
+            margin-top: 100px;
+        }
+        
+        .top {
+            border-top: 2px solid red;
+        }
+        
+        .bottom:hover {
+            border-bottom: 2px solid black;
+        }
+        
+        .bottom-1:hover {
+            border-top: 2px solid black;
+        }
+        
+        li .dropdown {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 6px 9px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body onscroll="changenavbar()" onload="changenavbar()">
+    <nav class="navbar navbar-expand-lg navbar-light fw-bold  fixed-top" id="nave-1">
+        <div class="container-fluid">
+            <img src="pic/logo_300x300.webp" class="navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link  bottom" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top active" href="about.html">About Us</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="shop.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="contact us .html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Help_Faq's.html">Faq us</a>
+                    </li>
+                    <li class="dropdown bottom-1">
+                        <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More Options
+                </a>
+
+                        <ul class="dropdown-content dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Lights
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="shop.html">Shop Now</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="other light.html">Other's Light's</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Furniture
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="bed.html">Bunk Bed</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Sofa-set .html">Sofa -Set</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="dress.html">Dresser</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+                <a href="cart.html" class="btn btn-outline-dark">add to cart</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container marg" style="background:rgba(192, 192, 192,0.4); height: 200px;">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h5 class="fw-bolder">
+                    ABOUT AS
+                </h5>
+                <h6>
+                    <a href="Index.html" class="about-link">Home /</a>About
+                </h6>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div data-aos="zoom-out-down" class="col-md-6">
+                <img src="pic/about003_970x.webp" width="100%" class="img-thumbnail">
+            </div>
+            <div data-aos="zoom-out-up" class="col-md-6 shadow p-3 mb-5 bg-body rounded img-thumbnail">
+                <h3 class="mt-5 ms-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">WELCOME TO LIGHTS</h3>
+                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">The Founder and Creative Head of this website bought together her unmatchable sense of style and love for Lights creating finest jewellery pieces! As a modern luxury brand, AK Collection focuses on timeless designs created with the intention
+                    of being ethnically beautiful enriched with traditions! Zahra Hassan also focuses on the entire process from designing to production to provide best costumer satisfaction! From the materials to packaging everything is given priority
+                    to become one the leading brands in the country!</p>
+                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="mt-3 ms-5 d-none d-xl-block" style="text-align:left;">us ferri velit sanctus cu, sed at soleat accusata. Dictas prompta et Ut placerat legendos interpre.Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante Etiam sit amet orci eget Duis dan molestie, massa maecenas eu nulla nisl.
+                    Destibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container start -->
+    <div class="container mt-5" style="background-color:rgba(192, 192, 192,0.3);">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="mt-5 fs-2 fw-light" data-aos="flip-down"> WHAT WE OFFER AT LIGHTS </h2>
+            </div>
+            <div data-aos="zoom-out-down" class="col-md-4 p-2">
+                <div class="card">
+                    <p class="mt-3 text-center">BEDROOM LIGHT</p>
+                    <div style="padding:50px;">
+                        <img src=" pic/about 1.webp " style="background:rgba(192, 192, 192,0.3); border-radius:50%; width: 100%;"></div>
+
+                    <div class="card-body text-center">
+                        <p class="card-text ">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    View More
+  </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">provide with light or lighting</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        What are the two meanings of light? <br> Light is a source of illumination, whether a natural one (like the sun) or an artificial one (like your lamp). Like light itself, the word can take a lot of different forms
+                                        — it can be a noun, an adjective, or a verb, and it can mean "bright" or "not heavy".
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-primary">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-out-down" class="col-md-4 p-2">
+                <div class="card">
+                    <p class="mt-3 text-center">MODERN LAMP</p>
+                    <div style="padding:50px;">
+                        <img src=" pic/about 2.webp " style="background:rgba(192, 192, 192,0.3); border-radius:50%; width: 100%;"></div>
+
+                    <div class="card-body text-center">
+                        <p class="card-text ">Aliquam id diam maecenas ultricies mi eget mauris. Quis vel eros donec ac odio tempor orci. Est ullamcorper eget nulla facilisi</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    View More
+  </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">provide with light or lighting</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        What are the two meanings of light? <br> Light is a source of illumination, whether a natural one (like the sun) or an artificial one (like your lamp). Like light itself, the word can take a lot of different forms
+                                        — it can be a noun, an adjective, or a verb, and it can mean "bright" or "not heavy".
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-primary">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="zoom-out-down" class="col-md-4 p-2 ">
+                <div class="card">
+                    <p class="mt-3 text-center">STYLISH LAMP</p>
+                    <div style="padding:50px;">
+                        <img src=" pic/about 3.webp " style="background:rgba(192, 192, 192,0.3); border-radius:50%; width: 100%;"></div>
+
+                    <div class="card-body text-center">
+                        <p class="card-text ">Sodales ut eu sem integer. Vel orci porta non pulvinar neque laoreet suspendisse. Eget arcu dictum varius duis at consecte</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    View More
+  </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">provide with light or lighting</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        What are the two meanings of light? <br> Light is a source of illumination, whether a natural one (like the sun) or an artificial one (like your lamp). Like light itself, the word can take a lot of different forms
+                                        — it can be a noun, an adjective, or a verb, and it can mean "bright" or "not heavy".
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-primary">OK</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="background-image:url(pic/about\ back.jpg); background-position:center; background-repeat: no-repeat; background-size: cover; backface-visibility: visible; background-attachment: scroll; background-origin: border-box;  height: 70%;">
+        <div class="row" data-aos="zoom-in-up">
+            <div class="col-md-12 p-5 text-center  banner">
+                <h1 class="text-center fw-lighter text-light">LIGHTS OFFERS</h1>
+                <p class="text-center fw-bold">Convallis a cras semper auctor neque vitae tempus. <br> Lacus sed turpis tincidunt id aliquet risus feugiat. <br> Congue eu consequat ac felis donec. Praesent tristique <br> magna sit amet purus. Nunc sed <br>velit dignissim sodales ut
+                    eu sem. Bibendum est ultricies <br>integer quis auctor elit sed vulputate.</p>
+                <button class="about-link-1 text-center" style="border:3px double red; ">Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="container img-thumbnail mt-5">
+        <div class="row">
+            <div class="col-md-6 img-thumbnail">
+                <h1 class="fw-light ms-4 mt-5 ">MODERN HANGING <br> LIGHTS</h1>
+                <p class="ms-5 mt-3">Lacus luctus accumsan tortor posuere ac ut. Purus in mollis nunc sed id. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Placerat vestibulum lectus mauris ultrices. Amet porttitor eget dolor morbi. Commodo
+                    odio aenean sed adipiscing. Et magnis dis parturient montes.</p>
+                <div class="container text-center fs-5">
+                    <div class="row mt-3">
+                        <div class="col-md-6 mt-4"><i class="fa fa-car" aria-hidden="true"> 
+                        Table Lamp</i></div>
+
+                        <div class="col-md-6 mt-4"><i class="fa fa-train" aria-hidden="true"> Gate Light</i>
+
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 mt-4"><i class="fa fa-plane" aria-hidden="true"> 
+                        Edison Light</i></div>
+
+                        <div class="col-md-6 mt-4"><i class="fa fa-ship" aria-hidden="true"> LED</i>
+                        </div>
+                    </div>
+                </div>
+                <button class="about-link-1 mt-5" style="border:3px double red;  margin-left: 60px;">Read More</button>
+
+            </div>
+            <div class="col-md-6">
+                <img src="pic/about002_770x.webp" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+
+    <!-- counter -->
+    <div class="container">
+        <div class="row ">
+            <div class="main container mt-4 border border-dark">
+                <div class="counting">
+                    <div class="inner-div row">
+                        <div class="colum col-md-3">
+                            <i class="fa fa-facebook-square text-primary"></i>
+                            <div class="number text-dark">1376</div>
+                            <h3 class="con text-dark">Friends</h3>
+                        </div>
+
+                        <div class="colum col-md-3">
+                            <i class="fa fa-instagram text-danger"></i>
+                            <div class="number text-dark">698</div>
+                            <h3 class="con text-dark">Followers</h3>
+                        </div>
+
+                        <div class="colum col-md-3">
+                            <i class="fa fa-youtube text-danger"></i>
+                            <div class="number text-dark">999</div>
+                            <h3 class="con text-dark text-dark">Subscribers</h3>
+                        </div>
+
+                        <div class="colum col-md-3">
+                            <i class="fa fa-twitter text-info"></i>
+                            <div class="number text-dark">1866</div>
+                            <h3 class="con text-dark">Following</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- counter end-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>OUR STAFF</h1>
+            </div>
+            <div class="row mt-3 text-center">
+                <div class="col-md-4"><img src="pic/team-03_800x.webp" class="gal-2" style="border-radius: 50%; width:200px; height:200px;">
+                    <h5 class="mt-2">VICTORIA LEWIS
+                    </h5>
+                    <h6 class="text-muted"> Designer</h6>
+                </div>
+                <div class="col-md-4"><img src="pic/team-02_800x.webp" class="gal-2" style="border-radius: 50%; width:200px; height:200px;">
+                    <h5 class="mt-2">EDITH UNDERWOOD
+                    </h5>
+                    <h6 class="text-muted"> Quality Tester</h6>
+                </div>
+                <div class="col-md-4"><img src="pic/team-01_800x.webp" class="gal-2" style="border-radius: 50%; width:200px; height:200px;">
+                    <h5 class="mt-2">GENEVIEVE DAVIDSON
+                    </h5>
+                    <h6 class="text-muted"> Supporter</h6>
+                </div>
+            </div>
+            <div class="col-md-12 text-center mt-3">
+                <h1>OUR TEAME MEMBER'S</h1>
+            </div>
+            <div class="row mt-3 text-center">
+                <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><img src="pic/farhan.jpg" class="gal-2" style="border-radius: 50%; width:200px; height:200px;">
+                    <h5 class="mt-2">SIR MUHAMMAD FARHAN
+                    </h5>
+                    <h6 class="text-muted"> Best Teacher & Developer</h6>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><img src="pic/ibrahim.jpeg" class="gal-2" style="border-radius: 50%; width:200px; height:200px;">
+                    <h5 class="mt-2">MUHAMMAD IBRAHIM
+                    </h5>
+                    <h6 class="text-muted"> Developer</h6>
+                </div>
+                <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"><img src="pic/rana.jpg" class="gal-2" style="border-radius: 50%; width:200px; height:200px;">
+                    <h5 class="mt-2">SIR RANA ARSALAN
+                    </h5>
+                    <h6 class="text-muted"> Supporter</h6>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid " style="background: rgb(0,0,0,0.9);">
+
+        <footer>
+            <div class="container-fluid p-4">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">CONTACT US</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-home" aria-hidden="true"></i> No: 58 A, East Madison Street, Baltimore, MD, USA 4508</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-phone" aria-hidden="true"></i> 0000 - 123 - 456789</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-envelope" aria-hidden="true"></i> info@example.com</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="link-2">where we deliver?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige;">Help</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Help</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Information</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Privacy Policy</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Shipping Delails</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">SUPPORT</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Contact us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="about.html" class="link-2">About Us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Careers</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Refunds & Returns</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Deliveries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">INFORMATION</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search Terms</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Advanced Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2"> Help & Faq's</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Store Location</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Orders & Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center p-3 row" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="col-md-4 text-center"><span style="color:beige;"> © 2022 Copyright:All rights Reserved </span><a class="link-4" href="Index.html">Chic Lights .com</a></div>
+                <div class="col-md-4 text-center">
+                    <div class="row">
+                        <p class="link-3">
+                            <i class="text-primary fa fa-twitter" aria-hidden="true"></i>
+                            <i class="text-success fa fa-google-plus" aria-hidden="true"></i>
+                            <i class=" text-primary fa fa-facebook" aria-hidden="true"></i>
+                            <i class="text-danger fa fa-tumblr" aria-hidden="true"></i></p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-light"><span style="color:beige;">Designed by Developer Muhammad Ibrahim</span></div>
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script>
+        function changenavbar() {
+
+            if (window.scrollY > 400) {
+                document.getElementById("nave-1").style.backgroundColor = " #ffb3b3";
+            } else {
+
+                document.getElementById("nave-1").style.backgroundColor = "rgba(255, 230, 255,0.2)";
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $(".number").counterUp({
+                delay: 10,
+                time: 1000
+            });
+
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+</html>

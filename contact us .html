@@ -1,0 +1,429 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="pic/logo_300x300.webp">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        h3 {
+            font-family: monospace;
+            font-weight: bold;
+            color: #fff;
+            font-size: 45px;
+            text-align: center;
+        }
+        
+        #contactus {
+            -webkit-box-shadow: 3px 6px 32px 2px rgba(0, 0, 0, 0.72);
+            -moz-box-shadow: 3px 6px 32px 2px rgba(0, 0, 0, 0.72);
+            box-shadow: 3px 6px 32px 2px rgba(0, 0, 0, 0.72);
+            background-image: linear-gradient( rgba(0, 0, 0, 0.466), rgba(255, 255, 255, 0.164));
+            border-radius: 10px;
+            background-image: url(pic/testimonials\ img1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        label {
+            color: #ffffff;
+        }
+        
+        input[type=text],
+        input[type=Email],
+        input[type=Number] {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            color: #ffffff;
+            transition: 0.3s ease-in-out;
+        }
+        
+        input[type=text]::placeholder,
+        input[type=Email]::placeholder,
+        input[type=Number]::placeholder {
+            color: #ffffff;
+            font-family: monospace;
+            font-size: 17px;
+        }
+        
+        input[type=text]:focus,
+        input[type=text]:hover,
+        input[type=Email]:focus,
+        input[type=Email]:hover,
+        input[type=Number]:focus,
+        input[type=Number]:hover {
+            box-shadow: none;
+            outline-color: none;
+            border: none;
+            border-bottom: 2px solid #44b8f2;
+        }
+        
+        #textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            color: #ffffff;
+            transition: 0.3s ease-in-out;
+        }
+        
+        #textarea::placeholder {
+            color: #ffffff;
+        }
+        
+        #textarea:focus,
+        #textarea:hover {
+            box-shadow: none;
+            outline-color: none;
+            border: none;
+            border-bottom: 2px solid #44b8f2;
+        }
+        
+        .btn-info {
+            height: 35px;
+            width: 40%;
+            transition: .5 ease-in-out;
+        }
+        
+        .btn-info:hover {
+            background-color: #44b8f2;
+        }
+        
+        .marg {
+            margin-top: 100px;
+        }
+        
+        .top {
+            border-top: 2px solid red;
+        }
+        
+        .bottom:hover {
+            border-bottom: 2px solid black;
+        }
+        
+        .bottom-1:hover {
+            border-top: 2px solid black;
+        }
+        
+        li .dropdown {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 6px 9px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body onscroll="changenavbar()" onload="changenavbar()">
+    <nav class="navbar navbar-expand-lg navbar-light fw-bold  fixed-top" id="nave-1">
+        <div class="container-fluid">
+            <img src="pic/logo_300x300.webp" class="navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link  bottom" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="about.html">About Us</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="shop.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top active" href="contact us .html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Help_Faq's.html">Faq us</a>
+                    </li>
+                    <li class="dropdown bottom-1">
+                        <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More Options
+                </a>
+
+                        <ul class="dropdown-content dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Lights
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="shop.html">Shop Now</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="other light.html">Other's Light's</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Furniture
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="bed.html">Bunk Bed</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Sofa-set .html">Sofa -Set</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="dress.html">Dresser</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <a href="cart.html" class="btn btn-outline-dark">add to cart</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid  marg" style="background:rgba(192, 192, 192,0.4); height: 200px;">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h5 class="fw-bolder">
+                    CONTACT US
+                </h5>
+                <h6>
+                    <a href="hover animat.html" class="about-link">Home /</a>Contact Us
+                </h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3 text-center ">
+                <p class="contact"><i class=" contact-1 fa fa-location-arrow" aria-hidden="true"></i></p>
+                <h6 class="mt-3">Address</h6>
+                <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+
+            </div>
+            <div class="col-md-3 text-center ">
+                <p class="contact"><i class="contact-1 fa fa-phone" aria-hidden="true"></i></p>
+                <h6 class="mt-3">EMAIL</h6>
+                <p>email:contact@example.com</p>
+            </div>
+
+            <div class="col-md-3 text-center ">
+                <p class="contact"><i class="contact-1 fa fa-clock-o" aria-hidden="true"></i></p>
+                <h6 class="mt-3">PHONE</h6>
+                <p>call:+0000-123-456789</p>
+            </div>
+            <div class="col-md-3 text-center ">
+                <p class="contact"><i class="contact-1 fa fa-envelope-o" aria-hidden="true"></i></p>
+                <h6 class="mt-3">TIMING</h6>
+                <p>available at 10am-8pm</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <iframe class="border rounded border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.7980091576023!2d-73.89453068526274!3d40.700446046260524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c2a53e99407%3A0xafff9f70d105465!2s62-23%2074th%20Ave%2C%20Flushing%2C%20NY%2011385%2C%20USA!5e0!3m2!1sen!2s!4v1670157555912!5m2!1sen!2s"
+                    width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-2"></div>
+
+
+            <div class="col-md-8 mt-4" id="contactus">
+                <h3>Contact us</h3>
+                <br><br>
+                <form>
+
+                    <input type="text" required="" class="form-control" placeholder="Enter Name">
+
+                    <br><br>
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <input type="Email" required="" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="col-md-6">
+
+                            <input type="Number" required="" class="form-control" placeholder="+92XX XXXXXXX">
+                        </div>
+
+                    </div>
+                    <br><br>
+                    <input type="text" placeholder="Enter Subject" class="form-control" required="">
+                    <br><br>
+
+                    <textarea rows="5" placeholder="Enter Message" id="textarea" class="form-control"></textarea>
+                    <br>
+                    <center>
+                        <button type="Submit" class="btn btn-info">Submit</button>
+                    </center>
+                    <br><br>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid mt-5 " style="background: rgb(0,0,0,0.9);">
+
+        <footer>
+            <div class="container-fluid p-4">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">CONTACT US</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-home" aria-hidden="true"></i> No: 58 A, East Madison Street, Baltimore, MD, USA 4508</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-phone" aria-hidden="true"></i> 0000 - 123 - 456789</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-envelope" aria-hidden="true"></i> info@example.com</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="link-2">where we deliver?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige;">Help</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Help</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Information</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Privacy Policy</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Shipping Delails</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">SUPPORT</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Contact us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="about.html" class="link-2">About Us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Careers</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Refunds & Returns</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Deliveries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">INFORMATION</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search Terms</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Advanced Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2"> Help & Faq's</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Store Location</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Orders & Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center p-3 row" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="col-md-4 text-center"><span style="color:beige;"> © 2022 Copyright:All rights Reserved </span><a class="link-4" href="Index.html">Chic Lights .com</a></div>
+                <div class="col-md-4 text-center">
+                    <div class="row">
+                        <p class="link-3">
+                            <i class="text-primary fa fa-twitter" aria-hidden="true"></i>
+                            <i class="text-success fa fa-google-plus" aria-hidden="true"></i>
+                            <i class=" text-primary fa fa-facebook" aria-hidden="true"></i>
+                            <i class="text-danger fa fa-tumblr" aria-hidden="true"></i></p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-light"><span style="color:beige;">Designed by Developer Muhammad Ibrahim</span></div>
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+    <script>
+        function changenavbar() {
+
+            if (window.scrollY > 400) {
+                document.getElementById("nave-1").style.backgroundColor = " #ffb3b3";
+            } else {
+
+                document.getElementById("nave-1").style.backgroundColor = "rgba(255, 230, 255,0.7)";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

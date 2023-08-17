@@ -1,0 +1,634 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="icon" href="pic/logo_300x300.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <style>
+        .top {
+            border-top: 2px solid red;
+        }
+        
+        .bottom:hover {
+            border-bottom: 2px solid black;
+        }
+        
+        .bottom-1:hover {
+            border-top: 2px solid black;
+        }
+        
+        li .dropdown {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 6px 9px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body onscroll="changenavbar()" onload="changenavbar()">
+    <nav class="navbar navbar-expand-lg navbar-light fw-bold  fixed-top" id="nave-1">
+        <div class="container-fluid">
+            <img src="pic/logo_300x300.webp" class="navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link  top active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="about.html">About Us</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="shop.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="contact us .html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Help_Faq's.html">Faq us</a>
+                    </li>
+                    <li class="dropdown bottom-1">
+                        <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More Options
+                </a>
+
+                        <ul class="dropdown-content dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Lights
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="shop.html">Shop Now</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="other light.html">Other's Light's</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Furniture
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="bed.html">Bunk Bed</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Sofa-set .html">Sofa -Set</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="dress.html">Dresser</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <a href="cart.html" class="btn btn-outline-dark">add to cart</a>
+            </div>
+        </div>
+    </nav>
+    <!-- slider start -->
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pic/slider-lights-1.webp" class="d-block w-100">
+                <div class="carousel-caption" data-aos="fade-right">
+                    <div class="row">
+
+                        <div class="col-md-8 d-none d-xl-block ">
+                            <h1 class="text-light">MODREN LAMPS</h1>
+                            <h3 class="text-warning fw-bold">60% OFF | LIMITED OFFER</h3>
+                            <p style="font-size:19px;"> <b class="text-info">Per Order Release Date </b>:Feb 29 2023
+                            </p>
+                            <p style="font-size:14 px;">Nesciunt voluptatem quos asperiores recusandae tempora cumque? Ipsum facere debitis itaque porro?</p>
+                            <h5 class="text-danger ">$68.98 | <b class="text-light">Details</b></h5>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <h4>MODREN LAMPS</h4>
+                    <h5 class="text-light">60% OFF | LIMITED OFFER</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic/slider-lights-2.webp" class="d-block w-100">
+                <div class="carousel-caption" data-aos="fade-right">
+                    <div class="row">
+                        <div class="col-md-8 d-none d-xl-block ">
+                            <h1 class="text-light">EID LAMPS</h1>
+                            <h3 class="text-dark fw-bold">40% OFF | LIMITED HARRY UP</h3>
+                            <p style="font-size:19px;"> <b class="text-info">Per Order Release Date </b>:Feb 29 2023
+                            </p>
+                            <p style="font-size:14 px;">Nesciunt voluptatem quos asperiores recusandae tempora cumque? Ipsum facere debitis itaque porro?</p>
+                            <h5 class="text-danger ">$68.98 | <b class="text-light">Details</b></h5>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <h4>EID LAMPS</h4>
+                    <h5 class="text-light">40% OFF | LIMITED HARRY UP</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic/slider-lights-3.webp" class="d-block w-100">
+                <div class="carousel-caption" data-aos="fade-right">
+                    <div class="row">
+
+                        <div class="col-md-4 ">
+
+                        </div>
+                        <div class="col-md-8 d-none d-xl-block ">
+                            <h1 class="text-light">FLASH SALE</h1>
+                            <h3 class="text-dark fw-bold">70% OFF | 3 DAYS TO GO ALL BRANDS</h3>
+                            <p style="font-size:19px;"> <b class="text-info">Per Order Release Date </b>:Feb 29 2023
+                            </p>
+                            <p style="font-size:14 px;">Nesciunt voluptatem quos asperiores recusandae tempora cumque? Ipsum facere debitis itaque porro?</p>
+                            <h5 class="text-danger ">$68.98 | <b class="text-light">Details</b></h5>
+                        </div>
+                    </div>
+                    <h4>FLASH SALE</h4>
+                    <h5 class="text-light">70% OFF | 3 DAYS TO GO ALL BRANDS</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- pic start -->
+    <div class="container mt-5">
+        <div class="row">
+            <h1 data-aos="fade-up" class="text-center mt-5 text-dark">OUR FEAUTURED COLLECTIONS</h1>
+            <div class="col-md-4" data-aos="zoom-in-up"><img src="pic/wall light.webp" class="img-thumbnail  hover-pic" style="width:100%;"></div>
+            <div class="col-md-4"><img src="pic/wall light 2.webp" class="img-thumbnail  hover-pic" style="width:100%;"></div>
+            <div class="col-md-4" data-aos="zoom-in-left"><img src="pic/table light.webp" class="img-thumbnail  hover-pic" style="width:100%;"></div>
+        </div>
+    </div>
+
+    <!--LATEST COLLECTION-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 class="font text-center" data-aos="flip-up">---LATEST COLLECTION---</h1>
+
+            </div>
+
+
+
+            <!-- pic -->
+
+            <div class="row mt-3" id="card">
+
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col" data-aos="fade-up" data-aos-duration="3000" style="background-image:url(pic/flat\ 40%.webp); width: 100%; height:100%;">
+
+
+                <h2 class="mt-5 ms-3">Get Upto</h2>
+                <h1 class="ms-4 mt-3">40% OFF</h1>
+                <h2 style="font-weight:lighter;" class="ms-5 mt-3">On floor lamps</h2>
+                <button style="border:1px double silver;" class=" link ms-5 mt-4 text-center mb-5"> <h4>Shop Now</h4></button>
+
+
+
+            </div>
+            <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" style="background-image:url(pic/flat\ 60.webp); width: 100%; height:100%;">
+
+                <h2 class="mt-5 ms-3">Get Upto</h2>
+                <h1 class="ms-4 mt-3">40% OFF</h1>
+                <h2 style="font-weight:lighter;" class="ms-5 mt-3">On floor lamps</h2>
+                <button style="border:1px double silver;" class=" link ms-5 mt-4 text-center mb-5"> <h4>Shop Now</h4></button>
+
+            </div>
+        </div>
+    </div>
+    <!-- new arrvals -->
+    <div class="container-fluid mt-5">
+        <div class="row text-center">
+
+
+            <div class="col-md-4"><img src="pic/sofa.webp" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="gal-2 gal-1 border border-info" width="100%"></div>
+            <div class="col-md-8">
+                <div class="row g-2">
+                    <div class="col-md-12 text-center">
+                        <h1 class="text-center">--NEW ARRIVALS--</h1>
+                    </div>
+                    <!-- <--first row-->
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4 ">
+                                    <img src="pic/small light 7.webp" class="img-fluid gal-2 gal-1 rounded-start" width="100%">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Mosaic Style Dome</h6>
+                                        <p class="card-text">$30.00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+
+                                    <img src="pic/small light 9.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Tak Hanging Lamp</h6>
+                                        <p class="card-text">$219.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/small light 5.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Paper Table Lamp</h6>
+                                        <p class="card-text">$222.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second row-->
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/small light 2.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Table Desk <br> Lamp</h6>
+                                        <p class="card-text">$540.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/small light 7.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-center">
+                                        <h6 class="card-title fs-5 link">Pandant Ceiling Lamp</h6>
+                                        <p class="card-text">$329.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/letest 11.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Wooden Table Lamp</h6>
+                                        <p class="card-text">$142.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- thid row -->
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/letest10.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Table Lamp Large</h6>
+                                        <p class="card-text">$389.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/letest 6.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link"> Holloween Fancy Lamp</h6>
+                                        <p class="card-text">$321.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="pic/letest 7.webp" class="img-fluid gal-2 gal-1  rounded-start" width="100%">
+
+                                </div>
+                                <div class="col-md-8 text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title fs-5 link">Paper Table Lamp</h6>
+                                        <p class="card-text">$222.00</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- conatiner star -->
+
+    <div class="container-fluid mt-5 border" style="background-image:url(pic/back.jpg); background-position:center; background-repeat: no-repeat; background-size: cover; backface-visibility: visible; background-attachment: scroll; background-origin: border-box; height: 80%;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container">
+                    <div class="row"></div>
+                    <div class="col-md-12">
+
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-8 text-center text-light">
+                                <div class="row text-dark" data-aos="fade-down-left" style="background:rgba(255, 255, 255,0.3); border-left:5px double red; border-radius: 5px; margin-top:180px;">
+                                    <h1>TIME TO ORDER YOUR ITEM MAKE'S YOU COLORFUL</h1>
+                                </div>
+                                <div class="row mt-5" data-aos="fade-down-right">
+                                    <h3>NEW 2018 STREET COLLECTION</h3>
+                                    <button style="width:auto; font-size: large;" class="link-one btn btn-outline-dark  ms-5">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- container start -->
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-md-12 text-center" data-aos="zoom-in-up">
+                <h1 class="fw-light"><i class="fa fa-bolt" aria-hidden="true"></i> BLOG POST <i class="fa fa-bolt" aria-hidden="true"></i></h1>
+            </div>
+            <div class="col-md-4 text-center" data-aos="zoom-in-right">
+                <div class="card">
+                    <img src="pic/blog-11.jpg" class="card-img-top trans">
+                    <div class="card-body">
+                        <h5 class="card-title">STANDING LIVING ROOM LAMP
+                        </h5>
+                        <p class="card-text font-1">Cames cum sociis natoque penatibus et magnis dis parturient montes, Suspendisse pulvinar augue nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, preti...</p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center" data-aos="zoom-in-right">
+                <div class="card">
+                    <img src="pic/blog-12.webp" class="card-img-top trans-1">
+                    <div class="card-body">
+                        <h5 class="card-title">MODREN FRAME HANGINGLIGHTS
+                        </h5>
+                        <p class="card-text font-1"> LIGHT Hnis nullam sagittis. Suspendisse pulvinar augue ac venenatis condimentum, sem libero volutpat nibh, nec pellentesque velit pede quis nunc. Vestibu...
+                        </p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center" data-aos="zoom-in-right">
+                <div class="card">
+                    <img src="pic/blog-13.webp" class="card-img-top trans">
+                    <div class="card-body">
+                        <h5 class="card-title">EDISON TABLE LAMP
+                        </h5>
+                        <p class="card-text font-1">Edison table lamp by Ram M August 27, 2018 EDISON TABLE LAMP Pris sed aliquam nisi quis porttitor congue, ac placerat dolor lectus quis orci. Phasellus consectetuer vestibulum elit. Ae...
+                        </p>
+                        <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="mt-5">
+
+    <!-- footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid " style="background: rgb(0,0,0,0.9);">
+
+        <footer>
+            <div class="container-fluid p-4">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">CONTACT US</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-home" aria-hidden="true"></i> No: 58 A, East Madison Street, Baltimore, MD, USA 4508</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-phone" aria-hidden="true"></i> 0000 - 123 - 456789</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-envelope" aria-hidden="true"></i> info@example.com</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="link-2">where we deliver?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige;">Help</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Help</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Information</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Privacy Policy</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Shipping Delails</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">SUPPORT</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Contact us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="about.html" class="link-2">About Us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Careers</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Refunds & Returns</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Deliveries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">INFORMATION</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search Terms</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Advanced Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2"> Help & Faq's</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Store Location</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Orders & Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center p-3 row" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="col-md-4 text-center"><span style="color:beige;"> © 2022 Copyright:All rights Reserved </span><a class="link-4" href="Index.html">Chic Lights .com</a></div>
+                <div class="col-md-4 text-center">
+                    <div class="row">
+                        <p class="link-3">
+                            <i class="text-primary fa fa-twitter" aria-hidden="true"></i>
+                            <i class="text-success fa fa-google-plus" aria-hidden="true"></i>
+                            <i class=" text-primary fa fa-facebook" aria-hidden="true"></i>
+                            <i class="text-danger fa fa-tumblr" aria-hidden="true"></i></p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-light"><span style="color:beige;">Designed by Developer Muhammad Ibrahim</span></div>
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+    <script>
+        function changenavbar() {
+
+            if (window.scrollY > 500) {
+                document.getElementById("nave-1").style.backgroundColor = "#ffb3b3";
+            } else {
+
+                document.getElementById("nave-1").style.backgroundColor = "#f9f9f9";
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

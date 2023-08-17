@@ -1,0 +1,437 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        .top {
+            border-top: 2px solid red;
+        }
+        
+        .bottom:hover {
+            border-bottom: 2px solid black;
+        }
+        
+        .bottom-1:hover {
+            border-top: 2px solid black;
+        }
+        
+        li .dropdown {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 6px 9px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .head {
+            font-size: 100px;
+            background: -webkit-linear-gradient(rgb(24, 23, 23), rgb(235, 27, 124));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .head-1 {
+            font-size: 50px;
+            background: -webkit-linear-gradient(rgb(24, 23, 23), rgb(153, 139, 145));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gal {
+            transition: 0.5s all ease-in-out;
+        }
+        
+        .gal:hover {
+            transform: scale(0.9);
+            border: 1px solid black;
+        }
+        
+        .marg {
+            margin-top: 120px;
+        }
+        
+        .gal-1 {
+            transition: all 1s ease-in-out;
+            filter: blur(2px);
+        }
+        
+        .gal-1:hover {
+            filter: blur(0);
+            border: 1px solid black;
+            transform: scale(1.1);
+        }
+        
+        .link-2 {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .link-2:hover {
+            color: tomato;
+        }
+        
+        .link-4 {
+            text-decoration: none;
+            color: antiquewhite;
+        }
+        
+        .link-4:hover {
+            color: red;
+            cursor: pointer;
+        }
+        
+        .about-link {
+            color: black;
+            text-decoration: none;
+            font-weight: lighter;
+        }
+        
+        .about-link:hover {
+            color: red;
+        }
+        
+        body {
+            background: rgba(0, 225, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body onload="lightgallery()" onscroll="changenavbar()" onload="changenavbar()">
+    <nav class="navbar navbar-expand-lg navbar-light fw-bold  fixed-top" id="nave-1">
+        <div class="container-fluid">
+            <img src="pic/logo_300x300.webp" class="navbar-brand">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link  bottom" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="about.html">About Us</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link top active" href="shop.html">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="contact us .html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom" href="Help_Faq's.html">Faq us</a>
+                    </li>
+                    <li class="dropdown bottom-1">
+                        <a class="nav-link dropdown-toggle dropbtn" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 More Options
+                </a>
+
+                        <ul class="dropdown-content dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Lights
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="shop.html">Shop Now</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="other light.html">Other's Light's</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <!-- <div class="dropdown">
+                                <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Furniture
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li>
+                                        <a class="dropdown-item" href="bed.html">Bunk Bed</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="Sofa-set .html">Sofa -Set</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="dress.html">Dresser</a>
+                                    </li>
+
+                                </ul>
+                            </div> -->
+
+
+
+                        </ul>
+                    </li>
+
+                </ul>
+                <a href="cart.html" class="btn btn-outline-dark">add to cart</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="row mt-5">
+
+            <div class="col-md-12">
+                <div class="row mt-4">
+                    <h1 class="mt-5 head text-center fw-bolder">Chic light's Gallery</h1>
+                    <div class="row " id="light">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="row mt-4 text-center">
+                    <h1 class="mt-5 head-1 ms-3 text-center">latest update </h1>
+                </div>
+                <div class="row mt-4 text-center">
+                    <div class="col-md-6 text-center ">
+                        <div class="toast show mt-5" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header text-center ">
+                                <img src="pic/g-3.jpg" width="100%" class="rounded">
+
+
+                            </div>
+                            <div class="toast-body text-center">
+                                <strong class="ms-2 text-info ">11 mins ago</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                <h5 class="mt-3"> Hello ! Sir You can see this pic.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-6 text-center">
+
+                        <div class="toast show mt-5" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header text-center">
+                                <img src="pic/side1.jpg" width="100%" class="rounded">
+
+
+                            </div>
+                            <div class="toast-body text-center">
+                                <strong class="ms-2 text-info ">2 hour ago</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                <h5 class="mt-3"> Hello ! Sir You can see this pic.</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-md-6 text-center">
+                        <div class="toast show mt-5" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header text-center">
+                                <img src="pic/about003_970x.webp" width="100%" class="rounded">
+
+
+                            </div>
+                            <div class="toast-body text-center">
+                                <strong class="ms-2 text-info ">1 day ago</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                <h5 class="mt-3"> Hello ! Sir You can see this pic.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <div class="toast show mt-5" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header text-center">
+                                <img src="pic/side3.jpg" width="100%" class="rounded">
+
+
+                            </div>
+                            <div class="toast-body text-center">
+                                <strong class="ms-2 text-info ">3 days ago</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                <h5 class="mt-3"> Hello ! Sir You can see this pic.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 text-center">
+                        <div class="toast show mt-5" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header text-center">
+                                <img src="pic/side3.jpg" width="100%" class="rounded ">
+
+
+                            </div>
+                            <div class="toast-body text-center">
+                                <strong class="ms-2 text-info ">1 Month ago</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                <h5 class="mt-3"> Hello ! Sir You can see this pic.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="container-fluid mt-5" style="background: rgb(0,0,0,0.9);">
+
+        <footer>
+            <div class="container-fluid p-4">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">CONTACT US</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-home" aria-hidden="true"></i> No: 58 A, East Madison Street, Baltimore, MD, USA 4508</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-phone" aria-hidden="true"></i> 0000 - 123 - 456789</a>
+                            </li>
+                            <li class="mb-1 mt-3">
+                                <a href="#!" class="link-2"><i class="fa fa-envelope" aria-hidden="true"></i> info@example.com</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="link-2">where we deliver?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige;">Help</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Help</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Information</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Privacy Policy</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Shipping Delails</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">SUPPORT</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Contact us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="about.html" class="link-2">About Us</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="contact us .html" class="link-2">Careers</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Refunds & Returns</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="Help_Faq's.html" class="link-2">Deliveries</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="mb-3" style="letter-spacing: 2px; color: beige">INFORMATION</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Search Terms</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Advanced Search</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2"> Help & Faq's</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Store Location</a>
+                            </li>
+                            <li class="mb-1 mt-2">
+                                <a href="#!" class="link-2">Orders & Returns</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="text-center p-3 row" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="col-md-4 text-center"><span style="color:beige;"> © 2022 Copyright:All rights Reserved </span><a class="link-4" href="Index.html">Chic Lights .com</a></div>
+                <div class="col-md-4 text-center">
+                    <div class="row">
+                        <p class="link-3">
+                            <i class="text-primary fa fa-twitter" aria-hidden="true"></i>
+                            <i class="text-success fa fa-google-plus" aria-hidden="true"></i>
+                            <i class=" text-primary fa fa-facebook" aria-hidden="true"></i>
+                            <i class="text-danger fa fa-tumblr" aria-hidden="true"></i></p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-light"><span style="color:beige;">Designed by Developer Muhammad Ibrahim</span></div>
+
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </div>
+    <!-- End of .container -->
+
+
+
+    <script>
+        function changenavbar() {
+
+            if (window.scrollY > 100) {
+                document.getElementById("nave-1").style.backgroundColor = "#ffb3b3";
+            } else {
+
+                document.getElementById("nave-1").style.backgroundColor = "rgba(0, 225, 255,0.1)";
+            }
+        }
+    </script>
+    <script src="javascript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
